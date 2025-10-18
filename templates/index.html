@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FastAPI Todo App</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>FastAPI Todo App</h1>
+
+        <form id="todoForm">
+            <input type="hidden" id="todoId">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="description" placeholder="Description">
+            <button type="submit">Add Todo</button>
+            <button type="button" id="cancelEdit" style="display:none;">Cancel</button>
+        </form>
+
+        <ul id="todoList"></ul>
+    </div>
+</body>
+</html>

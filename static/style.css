@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"] {
+    background: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #45a049;
+}
+
+#cancelEdit {
+    background: #f39c12;
+    color: white;
+}
+
+#cancelEdit:hover {
+    background: #d87e04;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+li:hover {
+    background: #e6f7ff;
+}
+
+/* Button wrapper */
+.button-wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #3498db;
+    color: white;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.edit-btn:hover {
+    background: #2c80b4;
+}
+
+/* Delete button */
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
